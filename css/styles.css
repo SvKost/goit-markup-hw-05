@@ -479,3 +479,11 @@ img {
 .footer-socials .icon {
   fill: var(--bright_text-color);
 }
+
+.modal-form {
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+}
