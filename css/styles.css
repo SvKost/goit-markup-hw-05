@@ -438,7 +438,7 @@ img {
   margin-right: 120px;
 }
 
-.footer-title {
+.subscribe-title {
   color: var(--body-bg-color);
   font-size: 16px;
   font-weight: 500;
@@ -481,7 +481,7 @@ img {
   fill: var(--bright_text-color);
 }
 
-.subscribe-box input {
+.subscribe-input {
   width: 264px;
   height: 40px;
   border-radius: 4px;
@@ -491,7 +491,7 @@ img {
   padding: 8px 16px;
 }
 
-.subscribe-box input::placeholder {
+.subscribe-input::placeholder {
   color: var(--body-bg-color);
   font-family: Roboto;
   font-size: 12px;
@@ -517,11 +517,11 @@ img {
   gap: 16px;
 }
 
-.btn-icon {
+.subscribe-btn-icon {
   fill: var(--body-bg-color);
 }
 
-.test {
+.subscribe-form {
   display: flex;
   justify-content: space-between;
   align-items: center;
