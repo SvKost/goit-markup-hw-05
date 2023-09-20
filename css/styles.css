@@ -438,7 +438,7 @@ img {
   margin-right: 120px;
 }
 
-.footer-socials-title {
+.footer-title {
   color: var(--body-bg-color);
   font-size: 16px;
   font-weight: 500;
@@ -450,6 +450,7 @@ img {
 .footer-socials {
   display: flex;
   gap: 16px;
+  margin-right: 80px;
 }
 
 .footer-socials-item {
@@ -480,7 +481,51 @@ img {
   fill: var(--bright_text-color);
 }
 
-.modal-form {
+.subscribe-box input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--WHITE, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: var(--headings-color);
+  padding: 8px 16px;
+}
+
+.subscribe-box input::placeholder {
+  color: var(--body-bg-color);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.subscribe-btn {
+  min-width: 165px;
+  border-radius: 4px;
+  background: var(--primary-brand-color);
+  color: var(--body-bg-color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-icon {
+  fill: var(--body-bg-color);
+}
+
+.test {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
 }
 
 .modal {
