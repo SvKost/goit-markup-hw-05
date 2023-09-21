@@ -51,7 +51,9 @@
       <section class="hero-section">
         <div class="hero-inner container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="button" type="button">Order Service</button>
+          <button class="button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -453,10 +455,13 @@
         <div class="subscribe-box">
           <p class="footer-title">Subscribe</p>
           <form class="subscribe-form">
+            <label for="user-email" class="visually-hidden" name="subscribe"
+              >Subscribe</label
+            >
             <input
               class="subscribe-input"
               type="email"
-              name="email-address"
+              name="user-email"
               placeholder="E-mail"
             />
             <button class="subscribe-btn" type="button" name="subscribe-btn">
@@ -469,29 +474,43 @@
         </div>
       </div>
     </footer>
-    <div class="modal-form">
-      <modal>
-        <p>Leave your contacts and we will call you back</p>
 
-        <form>
-          <label class="modal">
-            Name
-            <input type="text" />
-          </label>
-          <label class="modal">
-            Phone
-            <input type="text" />
-          </label>
-          <label class="modal">
-            Email
-            <input type="text" />
-          </label>
-          <label class="modal">
-            Comment
-            <textarea type="text" />
-          </label>
+    <div class="backdrop is-open" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>X</button>
+        <p>Leave your contacts and we will call you back</p>
+        <form name="contact-form">
+          <div>
+            <label for="user-name">Name</label>
+            <input id="user-name" type="text" name="user-name" />
+
+            <label for="user-phone">Phone</label>
+            <input id="user-phone" type="text" name="user-phone" />
+
+            <label for="user-mail">Email</label>
+            <input id="user-mail" type="text" name="user-mail" />
+          </div>
+          <div>
+            <label for="comment">Comment</label>
+            <textarea
+              class="form-textarea"
+              id="comment"
+              type="text"
+              name="user-comment"
+              placeholder="Text input"
+            />
+          </div>
+
+          <div>
+            <input id="checkbox" type="checkbox" />
+            <label for="checkbox"
+              >I accept the terms and conditions of the Privacy Policy</label
+            >
+          </div>
+
+          <button type="submit">Send</button>
         </form>
-      </modal>
+      </div>
     </div>
   </body>
 </html>
