@@ -541,10 +541,11 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
+  pointer-events: none; */
 }
 
-.is-open {
+
+.is-open { 
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -572,7 +573,8 @@ img {
 }
 
 .form-textarea {
-  resize: none;
+  /* resize: none; */
+  overflow: auto;
 }
 
 /*End Modal*/
