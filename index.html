@@ -477,42 +477,72 @@
 
     <div class="backdrop is-open" data-modal>
       <div class="modal">
-        <button class="modal-close" type="button" data-modal-close>X</button>
-        <p>Leave your contacts and we will call you back</p>
+        <button class="modal-close" type="button" data-modal-close>
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form name="contact-form">
-          <div>
-            <label for="user-name">Name</label>
-            <input id="user-name" type="text" name="user-name" />
-
-            <label for="user-phone">Phone</label>
-            <input id="user-phone" type="text" name="user-phone" />
-
-            <label for="user-mail">Email</label>
-            <input id="user-mail" type="text" name="user-mail" />
+          <div class="input-field">
+            <label class="modal-label" for="user-name">Name</label>
+            <input
+              class="modal-input"
+              id="user-name"
+              type="text"
+              name="user-name"
+            />
           </div>
 
-          <label for="Textarea">Comment</label>
-          <textarea id="Textarea" name="Textarea" placeholder="Text input"></textarea>
+          <div class="input-field">
+            <label class="modal-label" for="user-tel">Phone</label>
+            <input
+              class="modal-input"
+              id="user-tel"
+              type="tel"
+              name="user-tel"
+            />
+          </div>
 
-          <input id="checkbox" type="checkbox" />
-          <label for="checkbox"
-            >I accept the terms and conditions of the Privacy Policy</label
-          >
+          <div class="input-field">
+            <label class="modal-label" for="user-email">Email</label>
+            <input
+              class="modal-input"
+              id="user-email"
+              type="email"
+              name="user-email"
+            />
+          </div>
 
-          <button type="submit">Send</button>
+          <div class="input-field commemt-field">
+            <label class="modal-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-input modal-textarea"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="checkbox-feild">
+            <svg class="checkbox-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-checkbox"></use>
+            </svg>
+            <input
+              class="visually-hidden"
+              id="checkbox"
+              type="checkbox"
+              name="checkbox"
+            />
+            <label class="modal-label" for="checkbox"
+              >I accept the terms and conditions of the
+              <a class="privacy-policy" href="#">Privacy Policy</a></label
+            >
+          </div>
+
+          <button class="button" type="submit">Send</button>
         </form>
       </div>
     </div>
   </body>
 </html>
-<!-
-<div>
-            <label for="user-comment">Comment</label>
-            <textarea
-              class="form-textarea"
-              id="user-comment"
-              type="text"
-              name="user-comment"
-              placeholder="Text input"
-            />
-          </div> -->
