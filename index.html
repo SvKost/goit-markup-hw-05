@@ -458,11 +458,12 @@
             <label for="user-email" class="visually-hidden">Subscribe</label>
             <input
               class="subscribe-input"
+              id="user-email"
               type="email"
               name="user-email"
               placeholder="E-mail"
             />
-            <button class="subscribe-btn" type="button" name="subscribe-btn">
+            <button class="subscribe-btn" type="submit" name="subscribe-btn">
               Subscribe
               <svg class="subscribe-btn-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-plane"></use>
@@ -491,7 +492,7 @@
                 type="text"
                 name="user-name"
               />
-              <svg class="modal-input-icon" width="18" height="18">
+              <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -506,7 +507,7 @@
                 type="tel"
                 name="user-tel"
               />
-              <svg class="modal-input-icon" width="18" height="18">
+              <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -521,7 +522,7 @@
                 type="email"
                 name="user-email"
               />
-              <svg class="modal-input-icon" width="18" height="18">
+              <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-letter"></use>
               </svg>
             </div>
@@ -540,17 +541,18 @@
           <div class="modal-checkbox-wrap">
             <input
               class="modal-checkbox-input visually-hidden"
-              id="checkbox"
+              id="user-privacy"
               type="checkbox"
-              name="checkbox"
+              name="user-privacy"
             />
-            <span class="modal-checkbox-check">
-              <svg class="modal-checkbox-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-checkbox"></use>
-              </svg>
-            </span>
-            <label class="modal-checkbox-label" for="checkbox"
-              >I accept the terms and conditions of the
+
+            <label class="modal-checkbox-label" for="user-privacy">
+              <span class="modal-checkbox-check">
+                <svg class="modal-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
               <a class="privacy-policy" href="#">Privacy Policy</a>
             </label>
           </div>
