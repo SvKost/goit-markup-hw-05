@@ -749,12 +749,15 @@ textarea::placeholder {
   fill: #f4f4fd;
 }
 
-/* .modal-checkbox-input:checked + .modal-checkbox-check .modal-checkbox-icon {
+/* .modal-checkbox-input:checked
+  + .modal-checkbox-label
+  .modal-checkbox-check
+  .modal-checkbox-icon {
   opacity: 1;
 }
 
 .modal-checkbox-icon {
-  fill: var(--active-button-color);
-  opacity: 0; */
+  opacity: 0;
+} */
 
 /*End Modal*/
