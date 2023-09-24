@@ -564,12 +564,6 @@ img {
   pointer-events: auto;
 }
 
-/* .is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-} */
-
 .modal {
   position: absolute;
   top: 50%;
@@ -725,7 +719,7 @@ textarea::placeholder {
 }
 
 .privacy-policy {
-  color: #4d5ae5;
+  color: var(--primary-brand-color);
   text-decoration: underline;
 }
 
@@ -744,20 +738,9 @@ textarea::placeholder {
 }
 
 .modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-check {
-  background-color: #404bbf;
+  background-color: var(--active-button-color);
   border: none;
-  fill: #f4f4fd;
+  fill: var(--bright_text-color);
 }
-
-/* .modal-checkbox-input:checked
-  + .modal-checkbox-label
-  .modal-checkbox-check
-  .modal-checkbox-icon {
-  opacity: 1;
-}
-
-.modal-checkbox-icon {
-  opacity: 0;
-} */
 
 /*End Modal*/
